@@ -18,6 +18,12 @@ int main() {
 
 	std::cout << "Input Vehicle Production Year:> ";
 	std::cin >> YearBuilt;
+	if (!std::cin || YearBuilt ) {
+		std::cerr << "Input a valid integer.";
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		std::cin >> YearBuilt;
+	}
 	vehicle.setYearBuilt(YearBuilt);
 
 	vehicle.displayInfo();
@@ -38,10 +44,22 @@ int main() {
 
 	std::cout << "Input Car Production Year:> ";
 	std::cin >> YearBuilt;
+	if (!std::cin) {
+		std::cerr << "Input a valid integer:> ";
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		std::cin >> YearBuilt;
+	}
 	car.setYearBuilt(YearBuilt);
 
 	std::cout << "Input Car Door Count:> ";
 	std::cin >> DoorCount;
+	if (!std::cin) {
+		std::cerr << "Input a valid integer:> ";
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		std::cin >> DoorCount;
+	}
 	car.setDoorCount(DoorCount);
 
 	car.displayInfo();
@@ -61,10 +79,22 @@ int main() {
 
 	std::cout << "Input Truck Production Year:> ";
 	std::cin >> YearBuilt;
+	if (!std::cin) {
+		std::cerr << "Input a valid integer:> ";
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		std::cin >> YearBuilt;
+	}
 	truck.setYearBuilt(YearBuilt);
 
 	std::cout << "Input Truck Towing Capacity:> ";
 	std::cin >> TowingCapacity;
+	if (!std::cin) {
+		std::cerr << "Input a valid double:> ";
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		std::cin >> TowingCapacity;
+	}
 	truck.setTowingCapacity(TowingCapacity);
 
 	truck.displayInfo();
