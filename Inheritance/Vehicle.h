@@ -8,8 +8,13 @@ private:
 	int YearBuilt;
 public:
 	Vehicle() {
-
+		Manufacturer = { "" };
+		YearBuilt = 0;
 	}
-	std::string GetManufacturer()
+	virtual void displayInfo();
+	auto getManufacturer();
+	auto getYearBuilt();
+	void setManufacturer(std::string);
+	void setYearBuilt(int);
 };
 
