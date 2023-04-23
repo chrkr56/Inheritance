@@ -19,7 +19,7 @@ int main() {
 	std::cout << "Input Vehicle Production Year:> ";
 	std::cin >> YearBuilt;
 
-	if (!std::cin || YearBuilt ) {
+	while (!std::cin ) {
 		std::cerr << "Input a valid integer:> ";
 		std::cin.clear();
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -49,7 +49,7 @@ int main() {
 	std::cout << "Input Car Production Year:> ";
 	std::cin >> YearBuilt;
 
-	if (!std::cin) {
+	while (!std::cin) {
 		std::cerr << "Input a valid integer:> ";
 		std::cin.clear();
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -61,7 +61,7 @@ int main() {
 	std::cout << "Input Car Door Count:> ";
 	std::cin >> DoorCount;
 
-	if (!std::cin) {
+	while (!std::cin) {
 		std::cerr << "Input a valid integer:> ";
 		std::cin.clear();
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -90,7 +90,7 @@ int main() {
 	std::cout << "Input Truck Production Year:> ";
 	std::cin >> YearBuilt;
 
-	if (!std::cin) {
+	while (!std::cin) {
 		std::cerr << "Input a valid integer:> ";
 		std::cin.clear();
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -102,7 +102,7 @@ int main() {
 	std::cout << "Input Truck Towing Capacity:> ";
 	std::cin >> TowingCapacity;
 
-	if (!std::cin) {
+	while (!std::cin) {
 		std::cerr << "Input a valid double:> ";
 		std::cin.clear();
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
