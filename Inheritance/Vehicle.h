@@ -3,7 +3,7 @@
 #include <string>
 class Vehicle
 {
-private:
+protected:
 	std::string Manufacturer;
 	int YearBuilt;
 public:
