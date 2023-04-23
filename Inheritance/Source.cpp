@@ -19,7 +19,7 @@ int main() {
 	std::cout << "Input Vehicle Production Year:> ";
 	std::cin >> YearBuilt;
 	if (!std::cin || YearBuilt ) {
-		std::cerr << "Input a valid integer:> ";
+		std::cerr << "Input a valid integer.";
 		std::cin.clear();
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		std::cin >> YearBuilt;
