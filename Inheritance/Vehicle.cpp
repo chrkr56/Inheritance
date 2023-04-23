@@ -2,7 +2,8 @@
 #include <iostream>
 
 void Vehicle::displayInfo() {
-	std::cout << "Manufacturer: " << Manufacturer << '\n'
+	std::cout << "Vehicle Information: \n"
+		<< "Manufacturer: " << Manufacturer << '\n'
 		<< "Model Year: " << YearBuilt << '\n';
 }
 auto Vehicle::getManufacturer() {
