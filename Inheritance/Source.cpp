@@ -114,4 +114,7 @@ int main() {
 	truck.displayInfo();
 
 	std::cout << '\n';
+
+	system("pause");
+	return 0;
 }
